@@ -6,15 +6,15 @@
 <title>
   File: README
   
-    &mdash; Documentation by YARD 0.9.20
+    &mdash; Documentation by YARD 0.9.24
   
 </title>
 
-  <link rel="stylesheet" href="css/style.css" type="text/css" charset="utf-8" />
+  <link rel="stylesheet" href="css/style.css" type="text/css" />
 
-  <link rel="stylesheet" href="css/common.css" type="text/css" charset="utf-8" />
+  <link rel="stylesheet" href="css/common.css" type="text/css" />
 
-<script type="text/javascript" charset="utf-8">
+<script type="text/javascript">
   pathId = "README";
   relpath = '';
 </script>
@@ -61,7 +61,7 @@
 
 <p>Bring your own LUA scripts into redis</p>
 
-<p><a href="https://travis-ci.com/brpoplpush/brpoplpush-redis_script"><img src="https://travis-ci.com/brpoplpush/brpoplpush-redis_script.svg?branch=master" alt="Build Status"></a> <a href="https://codeclimate.com/github/brpoplpush/brpoplpush-redis_script/maintainability"><img src="https://api.codeclimate.com/v1/badges/3770a079b380d50c3d50/maintainability" alt="Maintainability"></a> <a href="https://codeclimate.com/github/brpoplpush/brpoplpush-redis_script/test_coverage"><img src="https://api.codeclimate.com/v1/badges/3770a079b380d50c3d50/test_coverage" alt="Test Coverage"></a></p>
+<p><a href="https://travis-ci.com/brpoplpush/brpoplpush-redis_script"><img src="https://travis-ci.com/brpoplpush/brpoplpush-redis_script.svg?branch=master" alt="Build Status"></a> <a href="https://codeclimate.com/github/brpoplpush/brpoplpush-redis_script/maintainability"><img src="https://api.codeclimate.com/v1/badges/3770a079b380d50c3d50/maintainability" alt="Maintainability"></a> <a href="https://codeclimate.com/github/brpoplpush/brpoplpush-redis_script/test_coverage"><img src="https://api.codeclimate.com/v1/badges/3770a079b380d50c3d50/test_coverage" alt="Test Coverage"></a> <a href="https://badge.fury.io/rb/brpoplpush-redis_script"><img src="https://badge.fury.io/rb/brpoplpush-redis_script.svg" alt="Gem Version"></a></p>
 
 <h2>Installation</h2>
 
@@ -87,7 +87,7 @@
 <p>Let&#39;s take sidekiq-unique-jobs for example. It uses <code>brpoplpush-redis_script</code> like follows:</p>
 
 <pre class="code ruby"><code class="ruby"># lib/my_redis_scripts.rb
-require &quot;brpoplpush-redis_script&quot;
+require &quot;brpoplpush/redis_script&quot;
 
 module SidekiqUniqueJobs::Scripts
   include Brpoplpush::RedisScript::DSL
@@ -141,9 +141,9 @@ return -1
 </div></div>
 
       <div id="footer">
-  Generated on Sun Oct 13 22:27:17 2019 by
+  Generated on Tue Feb 11 10:10:08 2020 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
-  0.9.20 (ruby-2.6.5).
+  0.9.24 (ruby-2.5.3).
 </div>
 
     </div>
